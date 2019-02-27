@@ -1,0 +1,24 @@
+{
+  "name": "servidor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/servidor.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "PORT=4000 nodemon src/servidor --watch src",
+    "dev-windows": "set PORT=4000 && nodemon src/server --watch src",
+    "start": "PORT=4000 node src/servidor",
+    "start-windows": "set PORT=4000 && node src/servidor"
+  },
+  "author": "Matias De Bonis",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.10"
+  }
+}
